@@ -10,12 +10,11 @@ packages land at the right tag for inclusion in CentOS Extras:
 Building the package can be done like this:
 
 
-    $ rpmbuild -bs
+    $ rpmbuild -bs \
                --define "_sourcedir $PWD" --define "_srcrpmdir $PWD" \
                --define "dist .el7.centos" \
                centos-release-paas-common.spec
 
-    $ koji -p centos \
-           build core7-extras-common-el7.centos \
-           centos-release-paas-common-1-2.el7.centos.src.rpm
+    $ cbs build core7-extras-common-el7.centos \
+          centos-release-paas-common-1-2.el7.centos.src.rpm
 

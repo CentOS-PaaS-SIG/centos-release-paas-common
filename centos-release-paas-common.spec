@@ -23,7 +23,7 @@ install -m 644 %SOURCE0 $RPM_BUILD_ROOT/etc/pki/rpm-gpg/
 
 %files
 %license LICENSE
-/etc/pki/rpm-gpg/RPM-GPG-KEY-CentOS-SIG-Storage
+/etc/pki/rpm-gpg/RPM-GPG-KEY-CentOS-SIG-PaaS
 
 %changelog
 * Wed May 18 2016 Troy Dawson <tdawson@redha.com> - 1-1
