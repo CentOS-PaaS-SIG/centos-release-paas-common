@@ -5,6 +5,7 @@ Release:   1%{?dist}
 License:   GPL
 Group:     System Environment/Base
 Source0:   RPM-GPG-KEY-CentOS-SIG-PaaS
+Source1:   LICENSE
 URL:       https://wiki.centos.org/SpecialInterestGroup/PaaS
 BuildArch: noarch
 
@@ -20,6 +21,7 @@ Common files needed by other centos-release components in the PaaS SIG
 %install
 mkdir -p $RPM_BUILD_ROOT/etc/pki/rpm-gpg/
 install -m 644 %SOURCE0 $RPM_BUILD_ROOT/etc/pki/rpm-gpg/
+install -m 644 %SOURCE1 .
 
 %files
 %license LICENSE
